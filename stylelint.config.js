@@ -1,6 +1,6 @@
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-recommended', 'stylelint-config-tailwindcss'],
-  plugins: ['stylelint-order'],
+  extends: ['stylelint-config-standard', 'stylelint-config-recommended', 'stylelint-config-recommended-vue', 'stylelint-config-tailwindcss'],
+  plugins: ['stylelint-scss, stylelint-order'],
   rules: {
     indentation: 2,
     'block-no-empty': true,

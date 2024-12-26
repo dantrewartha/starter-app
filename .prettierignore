@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+public
+.gitlab-ci.yml
+nginx-docker
+deployment
+node_modules
+resources
+Dockerfile

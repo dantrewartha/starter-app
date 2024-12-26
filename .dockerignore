@@ -1,0 +1,11 @@
+node_modules
+dist
+deployment
+npm-debug.log
+.gitignore
+.gitattributes
+Dockerfile
+#public/env/env-config.js
+.vscode
+.editorconfig
+README.md

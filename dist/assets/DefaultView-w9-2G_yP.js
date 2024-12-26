@@ -1,0 +1,1 @@
+import{_ as t,c as l,a as n,F as r,o as a}from"./index-ci_X8iPg.js";const o={};function s(u,e){return a(),l(r,null,[e[0]||(e[0]=n("h2",null,"Default View",-1)),e[1]||(e[1]=n("div",null,null,-1))],64)}const c=t(o,[["render",s]]);export{c as default};

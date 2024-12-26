@@ -1,0 +1,13 @@
+window.API_HOST = 'https://api-dev.bunn.com'
+window.API_PATH = 'bunn-asset-management/v0'
+window.ENV_NAME = 'DEV'
+window.CLIENT_ID = 'asset-manager'
+window.CLIENT_SECRET = 'Njhx9kPXpFsayPArlxd0ub5LWHZE4rJb'
+window.APP_BASE_URL = ''
+window.AUTH_DOMAIN = 'bunn-dev.us.auth0.com'
+window.AUTH_ID = 'DIH1pVhJNH7MsKn0ksO4dNwnNtZh2c4E'
+window.AUTH_AUDIENCE = 'https://api-dev.bunn.com'
+window.PROXY_HOST = 'https://api-dev.bunn.com';
+window.PROXY_BASE = '/digital-proxy'
+window.PROXY_UUID = '5256072b-e945-4a87-ae02-e50b5592d2f2'
+window.INTERCOM_APP_ID = 'ot17rvan'

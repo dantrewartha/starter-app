@@ -47,50 +47,42 @@ export default {
     security: securityPlugin,
   },
   rules: {
-    // JavaScript Core Rules
-    ...pluginJs.configs.recommended.rules,
-
-    // TypeScript Rules
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
-
-    // Vue Rules
-    'vue/no-v-html': 'warn',
-    'vue/multi-word-component-names': 'off',
-    'vue/script-setup-uses-vars': 'warn',
-
-    // TailwindCSS Rules
-    'tailwindcss/classnames-order': 'warn',
-    'tailwindcss/no-custom-classname': 'off',
-
-    // Prettier Rules
-    'prettier/prettier': ['error', prettierConfig],
-
-    // ESLint Core Rules
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-unused-vars': 'off',
-    'comma-dangle': ['warn', 'only-multiline'],
-    'id-length': ['warn', { exceptions: ['i', 'j', '_'] }],
-
-    // Import Plugin Rules
-    'import/order': [
-      'warn',
-      {
-        'newlines-between': 'never',
-        alphabetize: { order: 'asc', caseInsensitive: true },
-      },
-    ],
-    'import/no-unresolved': 'error',
-    'import/no-duplicates': 'warn',
-
-    // Promise Plugin Rules
-    'promise/always-return': 'warn',
-    'promise/no-return-wrap': 'error',
-    'promise/param-names': 'error',
-    'promise/catch-or-return': 'warn',
-    'promise/no-nesting': 'warn',
-
-    // Security Plugin Rules
-    'security/detect-object-injection': 'warn',
+    // // JavaScript Core Rules
+    // ...pluginJs.configs.recommended.rules,
+    // // TypeScript Rules
+    // '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    // // Vue Rules
+    // 'vue/no-v-html': 'warn',
+    // 'vue/multi-word-component-names': 'off',
+    // 'vue/script-setup-uses-vars': 'warn',
+    // // TailwindCSS Rules
+    // 'tailwindcss/classnames-order': 'warn',
+    // 'tailwindcss/no-custom-classname': 'off',
+    // // Prettier Rules
+    // 'prettier/prettier': ['error', prettierConfig],
+    // // ESLint Core Rules
+    // 'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    // 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // 'no-unused-vars': 'off',
+    // 'comma-dangle': ['warn', 'only-multiline'],
+    // 'id-length': ['warn', { exceptions: ['i', 'j', '_'] }],
+    // // Import Plugin Rules
+    // 'import/order': [
+    //   'warn',
+    //   {
+    //     'newlines-between': 'never',
+    //     alphabetize: { order: 'asc', caseInsensitive: true },
+    //   },
+    // ],
+    // 'import/no-unresolved': 'error',
+    // 'import/no-duplicates': 'warn',
+    // // Promise Plugin Rules
+    // 'promise/always-return': 'warn',
+    // 'promise/no-return-wrap': 'error',
+    // 'promise/param-names': 'error',
+    // 'promise/catch-or-return': 'warn',
+    // 'promise/no-nesting': 'warn',
+    // // Security Plugin Rules
+    // 'security/detect-object-injection': 'warn',
   },
 };

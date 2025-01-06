@@ -47,42 +47,87 @@ export default {
     security: securityPlugin,
   },
   rules: {
-    // // JavaScript Core Rules
-    // ...pluginJs.configs.recommended.rules,
-    // // TypeScript Rules
-    // '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
-    // // Vue Rules
-    // 'vue/no-v-html': 'warn',
-    // 'vue/multi-word-component-names': 'off',
-    // 'vue/script-setup-uses-vars': 'warn',
-    // // TailwindCSS Rules
-    // 'tailwindcss/classnames-order': 'warn',
-    // 'tailwindcss/no-custom-classname': 'off',
-    // // Prettier Rules
-    // 'prettier/prettier': ['error', prettierConfig],
-    // // ESLint Core Rules
-    // 'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    // 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    // 'no-unused-vars': 'off',
-    // 'comma-dangle': ['warn', 'only-multiline'],
-    // 'id-length': ['warn', { exceptions: ['i', 'j', '_'] }],
-    // // Import Plugin Rules
-    // 'import/order': [
-    //   'warn',
-    //   {
-    //     'newlines-between': 'never',
-    //     alphabetize: { order: 'asc', caseInsensitive: true },
-    //   },
-    // ],
-    // 'import/no-unresolved': 'error',
-    // 'import/no-duplicates': 'warn',
-    // // Promise Plugin Rules
-    // 'promise/always-return': 'warn',
-    // 'promise/no-return-wrap': 'error',
-    // 'promise/param-names': 'error',
-    // 'promise/catch-or-return': 'warn',
-    // 'promise/no-nesting': 'warn',
-    // // Security Plugin Rules
-    // 'security/detect-object-injection': 'warn',
+    // JavaScript Core Rules
+    ...pluginJs.configs.recommended.rules,
+
+    // TypeScript Rules
+    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+
+    // Vue Rules
+    'vue/no-v-html': 'warn',
+    'vue/multi-word-component-names': 'off',
+    'vue/script-setup-uses-vars': 'warn',
+    'vue/array-bracket-newline': ['error', 'consistent'],
+    'vue/array-element-newline': ['error', 'consistent'],
+    'vue/object-curly-newline': ['error', { consistent: true }],
+    'vue/object-property-newline': [
+      'error',
+      {
+        allowAllPropertiesOnSameLine: true,
+      },
+    ],
+    'vue/no-v-text-v-html-on-component': 'off',
+    'vue/singleline-html-element-content-newline': [
+      'error',
+      {
+        ignoreWhenNoAttributes: false,
+        ignoreWhenEmpty: false,
+      },
+    ],
+    'vue/multiline-html-element-content-newline': ['error'],
+    'vue/first-attribute-linebreak': [
+      'error',
+      {
+        singleline: 'beside',
+        multiline: 'below',
+      },
+    ],
+    'vue/padding-line-between-tags': ['error', [{ blankLine: 'always', prev: '*', next: '*' }]],
+    'vue/html-closing-bracket-newline': [
+      'error',
+      {
+        singleline: 'never',
+        multiline: 'never',
+        selfClosingTag: {
+          singleline: 'never',
+          multiline: 'never',
+        },
+      },
+    ],
+
+    // TailwindCSS Rules
+    'tailwindcss/classnames-order': 'warn',
+    'tailwindcss/no-custom-classname': 'off',
+
+    // Prettier Rules
+    'prettier/prettier': ['error', prettierConfig],
+
+    // ESLint Core Rules
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-unused-vars': 'off',
+    'comma-dangle': ['warn', 'only-multiline'],
+    'id-length': ['warn', { exceptions: ['i', 'j', '_'] }],
+
+    // Import Plugin Rules
+    'import/order': [
+      'warn',
+      {
+        'newlines-between': 'never',
+        alphabetize: { order: 'asc', caseInsensitive: true },
+      },
+    ],
+    'import/no-unresolved': 'warn',
+    'import/no-duplicates': 'error',
+
+    // Promise Plugin Rules
+    'promise/always-return': 'warn',
+    'promise/no-return-wrap': 'error',
+    'promise/param-names': 'error',
+    'promise/catch-or-return': 'warn',
+    'promise/no-nesting': 'warn',
+
+    // Security Plugin Rules
+    'security/detect-object-injection': 'warn',
   },
 };

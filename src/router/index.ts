@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import type { RouteRecordRaw } from 'vue-router';
-
 import DefaultLayout from '@/layouts/PageLayout.vue';
 import NotFound from '@/pages/NotFound.vue';
 
@@ -15,7 +14,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '',
         name: 'dashboard',
-        component: () => import('@/components/views/DefaultView.vue'),
+        component: () => import('@/pages/Default.vue'),
       },
     ],
   },

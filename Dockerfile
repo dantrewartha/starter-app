@@ -3,13 +3,13 @@
 # 2) nginx stage to serve frontend assets
 
 # Name the node stage "builder"
-FROM node:19-alpine AS builder
+FROM node:22-alpine AS builder
 # Set working directory
 WORKDIR /app
 # Copy all files from current directory to working dir in image
 COPY . .
 # install node modules and build assets
-RUN npm install -g npm@9.x
+RUN npm install -g npm@10.x
 RUN npm ci --only-production
 RUN npm run build
 

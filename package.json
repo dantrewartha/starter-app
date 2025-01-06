@@ -14,10 +14,10 @@
     "format": "prettier --check '**/*.{js,ts,vue,json,yaml,css,scss}'",
     "autoformat": "prettier --write '**/*.{js,ts,vue,json,yaml,css,scss}'",
     "lint": "npm run lint:js && npm run lint:style",
-    "lint:js": "eslint 'src/**/*.{js,ts,vue}'",
+    "lint:js": "eslint '**/*.{js,ts,vue}'",
     "lint:style": "stylelint '**/*.{css,scss,vue}'",
     "autolint": "npm run autolint:js && npm run autolint:style",
-    "autolint:js": "eslint 'src/**/*.{js,ts,vue}' --fix",
+    "autolint:js": "eslint '**/*.{js,ts,vue}' --fix",
     "autolint:style": "stylelint '**/*.{css,scss,vue}' --fix",
     "test": "vitest run",
     "test:watch": "vitest run --watch"

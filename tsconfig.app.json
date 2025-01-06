@@ -4,6 +4,6 @@
     "jsx": "preserve",
     "outDir": "./dist"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["node_modules", "dist", "public", "deployment", "nginx-docker", "Dockerfile"]
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "public", "deployment", "nginx-docker", "Dockerfile", "src/**/*.test.ts"]
 }

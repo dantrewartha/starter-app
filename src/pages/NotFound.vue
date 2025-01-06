@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LogoLight from '@/components/ui/Logo-Light.vue';
+import LogoLight from '@/components/logos/Logo-Light.vue';
 </script>
 <template>
   <div class="rounded-lg bg-white px-5 py-12 shadow sm:px-6">

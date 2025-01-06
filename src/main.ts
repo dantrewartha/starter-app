@@ -1,15 +1,11 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-
-import router from '@/router';
-
-import auth0Client from './plugins/auth0';
-
-import PrimeVue from 'primevue/config';
-import { primeVueConfig } from '@/config/primevue.config';
-
 import { createPinia } from 'pinia';
 import piniaPluginPersistedState from 'pinia-plugin-persistedstate';
+import PrimeVue from 'primevue/config';
+import { createApp } from 'vue';
+import App from './App.vue';
+import auth0Client from './plugins/auth0';
+import { primeVueConfig } from '@/config/primevue.config';
+import router from '@/router';
 
 import './style.css';
 

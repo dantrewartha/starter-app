@@ -6,7 +6,6 @@ const version = ref(APP_VERSION);
 
 <template>
   <span class="hidden">BUNN StarterApp v{{ version }}</span>
+
   <router-view></router-view>
 </template>
-
-<style></style>

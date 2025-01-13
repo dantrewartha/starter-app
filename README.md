@@ -2,44 +2,70 @@
 
 This project serves as a scalable and maintainable starter template for Vue 3 applications using Vite, TypeScript, Tailwind CSS, ESLint, Prettier, Stylelint, and Vitest.
 
----
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Code Style Guidelines](#code-style-guidelines)
+- [Installation and Running the Project](#installation-and-running-the-project)
+- [Contributing](#contributing)
+- [License](#license)
+
 
 ## **Project Structure**
 
+```bash
+.
+├── .vscode/                 # VS Code settings and workspace configurations.
+├── deployment/              # Deployment configurations
+├── dist/                    # Production build output
+├── nginx-docker/            # Nginx Docker configurations
+├── public/                  # Static public assets
+├── src/
+│   ├── assets/              # Static assets (images, fonts, etc.)
+│   ├── components/          # Reusable Vue components organized by feature or purpose.
+│   ├── composables/         # Reusable Composition API functions for shared logic.
+│   ├── config/              # Configuration files for application settings and environment variables.
+│   ├── directives/          # Custom Vue directives for DOM manipulation and behavior.
+│   ├── hooks/               # Custom hooks for reusable logic and stateful behaviors.
+│   ├── layouts/             # Page layouts that define structural templates.
+│   ├── pages/               # Route views that represent entire pages.
+│   ├── plugins/             # Custom plugins for third-party integrations like Axios or authentication.
+│   ├── router/              # Vue Router configuration and route definitions.
+│   ├── services/            # API calls and backend service integrations.
+│   ├── stores/              # Pinia state management for application-level state.
+│   ├── stories/             # Storybook stories for documenting and testing components.
+│   ├── styles/              # Global and utility styles, including Tailwind setup.
+│   ├── tests/               # Unit and integration tests organized by feature or component.
+│   ├── types/               # TypeScript type definitions and interfaces.
+│   ├── utils/               # Utility functions for reusable helpers.
+│   ├── main.ts              # App entry point that initializes the application.
+│   └── App.vue              # Root component for the application.
+├── tests/                   # Unit and integration tests.
+├── .dockerignore            # Docker ignore file
+├── .editorconfig            # Editor configuration
+├── .gitignore               # Git ignore file
+├── .npmrc                   # NPM configuration
+├── .prettierignore          # Prettier ignore file
+├── .prettierrc              # Prettier configuration
+├── .storybook               # Storybook configuration
+├── .stylelintignore         # Stylelint ignore file
+├── Dockerfile               # Dockerfile for containerization
+├── README.md                # Project documentation
+├── ci_settings.xml          # Continuous integration settings
+├── eslint.config.js         # ESLint configuration
+├── index.html               # HTML template
+├── package-lock.json        # Package lock file
+├── package.json             # Package manifest
+├── postcss.config.js        # PostCSS configuration
+├── stylelint.config.cjs     # Stylelint configuration
+├── tailwind.config.js       # Tailwind CSS configuration
+├── tsconfig.app.json        # TypeScript config for application
+├── tsconfig.base.json       # Base TypeScript configuration
+├── tsconfig.eslint.json     # TypeScript config for ESLint
+├── tsconfig.json            # TypeScript configuration
+├── vite.config.ts           # Vite configuration
+└── vitest.config.ts         # Vitest configuration
 ```
-├── src
-│   ├── assets         # Static assets (images, fonts, etc.)
-│   ├── components     # Reusable Vue components organized by feature or purpose.
-│   ├── composables    # Reusable Composition API functions for shared logic.
-│   ├── config         # Configuration files for application settings and environment variables.
-│   ├── directives     # Custom Vue directives for DOM manipulation and behavior.
-│   ├── hooks          # Custom hooks for reusable logic and stateful behaviors.
-│   ├── layouts        # Page layouts that define structural templates.
-│   ├── pages          # Route views that represent entire pages.
-│   ├── plugins        # Custom plugins for third-party integrations like Axios or authentication.
-│   ├── router         # Vue Router configuration and route definitions.
-│   ├── services       # API calls and backend service integrations.
-│   ├── stores         # Pinia state management for application-level state.
-│   ├── stories        # Storybook stories for documenting and testing components.
-│   ├── styles         # Global and utility styles, including Tailwind setup.
-│   ├── tests          # Unit and integration tests organized by feature or component.
-│   ├── types          # TypeScript type definitions and interfaces.
-│   ├── utils          # Utility functions for reusable helpers.
-│   ├── main.ts        # App entry point that initializes the application.
-│   └── App.vue        # Root component for the application.
-├── tests              # Unit and integration tests.
-├── public             # Static public files like `index.html` and favicon.
-├── .vscode            # Editor-specific settings and workspace configurations.
-├── package.json       # Dependencies and scripts for project management.
-├── vite.config.ts     # Vite configuration for build and dev server options.
-├── tailwind.config.cjs # TailwindCSS configuration file.
-├── eslint.config.js   # ESLint configuration file for linting JavaScript/TypeScript.
-├── stylelint.config.cjs # Stylelint configuration file for linting stylesheets.
-├── .prettierrc        # Prettier configuration file for formatting rules.
-└── README.md          # Documentation.
-```
-
----
 
 ## **Setup**
 

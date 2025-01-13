@@ -5,11 +5,11 @@ This project serves as a scalable and maintainable starter template for Vue 3 ap
 ## Table of Contents
 
 - [Project Structure](#project-structure)
-- [Code Style Guidelines](#code-style-guidelines)
-- [Installation and Running the Project](#installation-and-running-the-project)
+- [Setup](#setup)
+- [Code Standards](#code-style-guidelines)
+- [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
-
 
 ## **Project Structure**
 
@@ -72,7 +72,7 @@ This project serves as a scalable and maintainable starter template for Vue 3 ap
 ### **Requirements**
 
 - **Node.js**: v22.x or later
-- **npm**: v10.x or later
+- **npm**: v11.x or later
 
 ### **Major Dependencies**
 
